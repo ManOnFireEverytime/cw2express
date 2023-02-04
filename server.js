@@ -134,11 +134,11 @@ app.post("/collections/:collectionName", function (req, res, next) {
 });
 
 // Logger middleware
-// app.use(function (req, res, next) {
-//   console.log("Request URL:" + req.url);
-//   console.log("Request Date:" + new Date());
-//   next();
-// });
+app.use(function (req, res, next) {
+  console.log("Request URL:" + req.url);
+  console.log("Request Date:" + new Date());
+  next();
+});
 // Static file middleware
 var staticPath = path.join(__dirname, "images");
 app.use("/images", express.static(staticPath));
