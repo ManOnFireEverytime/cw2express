@@ -1,8 +1,8 @@
-// var express = require("express");
+var express = require("express");
 
-// var morgan = require("morgan");
-// var path = require("path");
-// var bodyParser = require("body-parser");
+var morgan = require("morgan");
+var path = require("path");
+var bodyParser = require("body-parser");
 
 // let propertiesReader = require("properties-reader");
 // let propertiesPath = path.resolve(__dirname, "conf/db.properties");
